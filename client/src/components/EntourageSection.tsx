@@ -13,16 +13,16 @@ const EntourageSection = () => {
   ];
 
   const ninong = [
-    { name: "VADM FERDINAND S GOLEZ AFP(RET)" },
-    { name: "VADM TORIBIO D ADACI JR AFP(RET)" },
-    { name: "RADM ALLAN M JAVIER PN" },
-    { name: "COMMO DWIGHT STEVEN M DULNOAN PN" },
-    { name: "COMMO DANILO S AGUIT PN(RET)" },
-    { name: "COMMO ALEX V GIANAN PN" },
-    { name: "CAPT DARIO A YANTO JR PN(MNSA)" },
-    { name: "CAPT FERDINAND P GLORIA PN(GSC)" },
-    { name: "COL JIMMY B LUCQUIAO PA(GSC)" },
-    { name: "LTC ALLAN G REYES PAF(GSC)" }
+    { name: "VADM Ferdinand S Golez AFP(RET)" },
+    { name: "VADM Toribio D Adaci Jr AFP(RET)" },
+    { name: "RADM Allan M Javier PN" },
+    { name: "COMMO Dwight Steven M Dulnoan PN" },
+    { name: "COMMO Danilo S Aguit PN(RET)" },
+    { name: "COMMO Alex V Gianan PN" },
+    { name: "CAPT Dario A Yanto Jr PN(MNSA)" },
+    { name: "CAPT Ferdinand P Gloria PN(GSC)" },
+    { name: "COL Jimmy B Lucquiao PA(GSC)" },
+    { name: "LTC Allan G Reyes PAF(GSC)" }
   ];
 
   const ninang = [
