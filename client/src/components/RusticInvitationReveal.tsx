@@ -39,27 +39,27 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
           <div className="absolute bottom-0 left-0 w-20 h-20 border-l-2 border-b-2 border-primary/30" />
           <div className="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/30" />
 
-          {/* Decorative Flowers on Edges */}
+          {/* Decorative Icons on Edges */}
           <img 
-            src={flower1Image} 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443058/wheel-removebg-preview_milwmr.png" 
             alt="" 
             className="absolute top-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float pointer-events-none"
             data-testid="decoration-flower-invitation-topleft"
           />
           <img 
-            src={flowerImage} 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443058/259dd688-c7cf-4c7c-a6f8-ee6f89291827_c3q7h0.png" 
             alt="" 
             className="absolute top-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none"
             data-testid="decoration-flower-invitation-topright"
           />
           <img 
-            src={flower1Image} 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443058/259dd688-c7cf-4c7c-a6f8-ee6f89291827_c3q7h0.png" 
             alt="" 
             className="absolute bottom-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none transform rotate-45"
             data-testid="decoration-flower-invitation-bottomleft"
           />
           <img 
-            src={flowerImage} 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443057/hook-removebg-preview_mfiquf.png" 
             alt="" 
             className="absolute bottom-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float pointer-events-none transform -rotate-12"
             data-testid="decoration-flower-invitation-bottomright"
@@ -70,8 +70,8 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             {/* Heart Icon with modern styling */}
             <div className="flex justify-center">
               <div className="relative w-20 h-20">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 animate-pulse" />
-                <div className="relative w-full h-full rounded-full bg-white border-2 border-primary/20 flex items-center justify-center">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-600/20 to-yellow-600/10 animate-pulse" />
+                <div className="relative w-full h-full rounded-full bg-white border-2 border-yellow-600/20 flex items-center justify-center">
                   <img 
                     src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763442716/751525ab-5907-4590-885a-c08578c62b36-removebg-preview_itqfp2.png" 
                     alt="Wedding symbol" 
@@ -83,9 +83,9 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
 
             {/* Modern divider above title */}
             <div className="flex items-center justify-center gap-2">
-              <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
-              <div className="w-2 h-2 rounded-full bg-primary" />
-              <div className="w-8 h-px bg-gradient-to-l from-transparent to-primary/50" />
+              <div className="w-8 h-px bg-gradient-to-r from-transparent to-yellow-600/50" />
+              <div className="w-2 h-2 rounded-full bg-yellow-600" />
+              <div className="w-8 h-px bg-gradient-to-l from-transparent to-yellow-600/50" />
             </div>
 
             <span 
@@ -97,7 +97,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
               <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             </span>
 
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"/>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto"/>
 
             <p 
               className="text-lg md:text-xl text-foreground leading-relaxed max-w-xl mx-auto font-light"
@@ -107,9 +107,9 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
 
             {/* Stylized divider */}
             <div className="flex items-center justify-center gap-3 py-2">
-              <div className="w-12 h-px bg-primary/30" />
-              <div className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-              <div className="w-12 h-px bg-primary/30" />
+              <div className="w-12 h-px bg-yellow-600/30" />
+              <div className="w-1.5 h-1.5 rounded-full bg-yellow-600/50" />
+              <div className="w-12 h-px bg-yellow-600/30" />
             </div>
 
             <div className="text-base md:text-lg text-muted-foreground italic space-y-2">
@@ -119,14 +119,14 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
 
             {/* Modern Hearts decoration */}
             <div className="flex items-center justify-center gap-3 pt-6">
-              <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center">
-                <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" />
+              <div className="w-8 h-8 rounded-full bg-yellow-600/5 flex items-center justify-center">
+                <Heart className="w-4 h-4 text-yellow-600 fill-yellow-600 animate-pulse" />
               </div>
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Heart className="w-5 h-5 text-primary fill-primary animate-pulse" style={{ animationDelay: '0.5s' }} />
+              <div className="w-10 h-10 rounded-full bg-yellow-600/10 flex items-center justify-center">
+                <Heart className="w-5 h-5 text-yellow-600 fill-yellow-600 animate-pulse" style={{ animationDelay: '0.5s' }} />
               </div>
-              <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center">
-                <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" style={{ animationDelay: '1s' }} />
+              <div className="w-8 h-8 rounded-full bg-yellow-600/5 flex items-center justify-center">
+                <Heart className="w-4 h-4 text-yellow-600 fill-yellow-600 animate-pulse" style={{ animationDelay: '1s' }} />
               </div>
             </div>
           </div>
