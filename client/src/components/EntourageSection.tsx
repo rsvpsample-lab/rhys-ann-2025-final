@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const EntourageSection = () => {
   const parentsOfGroom = [
-    { name: "Mrs. Alma G. Anonuevo" },
-    { name: "MSG Alexander R Anonuevo PA(RET)" }
+    { name: "Mrs. Alma G. Añonuevo" },
+    { name: "MSg Alexander R Añonuevo PA(RET)" }
   ];
 
   const parentsOfBride = [
@@ -41,7 +41,7 @@ const EntourageSection = () => {
   const secondarySponsors = {
     candle: [
       { name: "Mrs. Marcela S. Espiritu Civ HR" },
-      { name: "MSG Roque B Awing PA" }
+      { name: "MSg Roque B Awing PA" }
     ],
     veil: [
       { name: "ASN Mhon N Pagatpatan PN" },
