@@ -57,7 +57,7 @@ const FAQSection = () => {
     {
       question: "CAN I POST PICTURES ON SOCIAL MEDIA?",
       icon: Camera,
-      answer: "After the ceremony, you can take and share photos. If you do, we'd love for you to use our wedding hashtag #AnndyingcommitmentandendRhyslove so we can look back on all the wonderful memories together."
+      answer: "After the ceremony, you can take and share photos. If you do, we'd love for you to use our wedding hashtags #bANNwithbRHYS and #RHYS&ANNdyinglove so we can look back on all the wonderful memories together."
     },
     {
       question: "UNPLUGGED CEREMONY",

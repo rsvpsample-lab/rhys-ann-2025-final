@@ -91,12 +91,19 @@ const HashtagGiftsSection = () => {
 
                 <div className="mt-8 pt-6 border-t border-primary/20">
                   <p className="text-sm md:text-base text-foreground/80 mb-3">
-                    Share your moments using our hashtag
+                    Share your moments using our hashtags
                   </p>
-                  <div className="inline-block border-2 border-primary rounded-lg px-6 py-3 bg-primary/5">
-                    <p className="text-primary text-lg md:text-xl font-semibold" data-testid="text-wedding-hashtag">
-                      #RHYS&ANNdyinglove
-                    </p>
+                  <div className="flex flex-wrap justify-center gap-3">
+                    <div className="inline-block border-2 border-primary rounded-lg px-6 py-3 bg-primary/5">
+                      <p className="text-primary text-lg md:text-xl font-semibold" data-testid="text-wedding-hashtag">
+                        #bANNwithbRHYS
+                      </p>
+                    </div>
+                    <div className="inline-block border-2 border-primary rounded-lg px-6 py-3 bg-primary/5">
+                      <p className="text-primary text-lg md:text-xl font-semibold">
+                        #RHYS&ANNdyinglove
+                      </p>
+                    </div>
                   </div>
                 </div>
               </motion.div>
