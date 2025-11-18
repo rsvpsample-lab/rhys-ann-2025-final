@@ -6,10 +6,14 @@ import flower9 from '@assets/flower9_1759741371017.png';
 import flower3 from '@assets/flower3_1759741371015.png';
 
 const DressCodeSection = () => {
-  const dressCodeColors = [
-    { name: 'Navy Blue', color: '#1e3a8a', hex: '#1e3a8a' },
-    { name: 'Sky Blue', color: '#7dd3fc', hex: '#7dd3fc' },
-    { name: 'Sage Green', color: '#9ca986', hex: '#9ca986' },
+  const principalSponsorsColors = [
+    { name: 'Dusty Blue', color: '#7c9eb2', hex: '#7c9eb2' },
+    { name: 'Light Blue', color: '#a8c5dd', hex: '#a8c5dd' }
+  ];
+
+  const guestsColors = [
+    { name: 'Royal Blue', color: '#2563eb', hex: '#2563eb' },
+    { name: 'Dusty Blue', color: '#7c9eb2', hex: '#7c9eb2' },
     { name: 'Gold', color: '#fbbf24', hex: '#fbbf24' }
   ];
 
@@ -71,6 +75,22 @@ const DressCodeSection = () => {
                         <strong>NINANG:</strong> Shades of Blue dress
                       </p>
                     </div>
+                    
+                    {/* Color Palette for Principal Sponsors */}
+                    <div className="mt-4 pt-4 border-t border-primary/20">
+                      <p className="text-xs font-semibold text-foreground mb-3">Color Palette</p>
+                      <div className="flex justify-center gap-3">
+                        {principalSponsorsColors.map((colorItem, index) => (
+                          <div key={index} className="text-center">
+                            <div 
+                              className="w-12 h-12 mx-auto rounded-lg border-2 border-border shadow-sm"
+                              style={{ backgroundColor: colorItem.color }}
+                            ></div>
+                            <p className="text-xs text-foreground mt-1">{colorItem.name}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
                 <motion.img 
@@ -111,9 +131,25 @@ const DressCodeSection = () => {
                     <div className="text-center px-4 mb-3">
                       <p className="text-base font-semibold text-foreground mb-2">Smart Casual</p>
                       <p className="text-sm text-foreground mb-3">
-                        Shades of Blue, Sage Green, and Gold<br/>
-                        <span className="text-xs italic">(Blue Jeans are allowed)</span>
+                        <strong>Men:</strong> Smart casual and black jeans or maong pants<br/>
+                        <strong>Women:</strong> Mid-length maxi dress in Royal Blue, Dusty Blue, Gold, or Light Blue
                       </p>
+                    </div>
+                    
+                    {/* Color Palette for Guests */}
+                    <div className="mt-4 pt-4 border-t border-primary/20">
+                      <p className="text-xs font-semibold text-foreground mb-3">Color Palette</p>
+                      <div className="flex justify-center gap-3">
+                        {guestsColors.map((colorItem, index) => (
+                          <div key={index} className="text-center">
+                            <div 
+                              className="w-12 h-12 mx-auto rounded-lg border-2 border-border shadow-sm"
+                              style={{ backgroundColor: colorItem.color }}
+                            ></div>
+                            <p className="text-xs text-foreground mt-1">{colorItem.name}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -164,31 +200,6 @@ const DressCodeSection = () => {
               <p className="text-center italic mt-4">
                 White and similar shades are reserved for the bride and groom
               </p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Guests Color Palette */}
-        <motion.div 
-          className="mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 9.1 }}
-        >
-          <div className="bg-card/30 border border-border rounded-xl p-8 shadow-soft hover-elegant transition-all duration-500">
-            <h3 className="text-xl font-body font-medium text-foreground mb-6 text-center">
-              Color Theme: Shades of Blue, Sage Green with a Touch of Gold
-            </h3>
-            <div className="grid grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
-              {dressCodeColors.map((colorItem, index) => (
-                <div key={index} className="text-center group">
-                  <div 
-                    className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-xl border-2 border-border shadow-soft group-hover:scale-105 transition-transform duration-300"
-                    style={{ backgroundColor: colorItem.color }}
-                  ></div>
-                  <p className="text-xs text-foreground mt-2">{colorItem.name}</p>
-                </div>
-              ))}
             </div>
           </div>
         </motion.div>
