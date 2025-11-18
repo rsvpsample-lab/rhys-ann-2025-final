@@ -79,7 +79,7 @@ const Index = () => {
         <DressCodeSection />
         <HashtagGiftsSection />
         <MemorableMomentsSection />
-        <RSVPSection rsvpLink="https://kenneth-suzette-rsvp.replit.app" />
+        <RSVPSection rsvpLink="https://rhys-ann-rsvp.replit.app" />
         <CoverSection
           imageUrl="https://res.cloudinary.com/dqr27nycf/image/upload/v1763393690/IMG-66_uxkkvh.jpg"
           alt="Rhys & Ann Wedding Cover"
