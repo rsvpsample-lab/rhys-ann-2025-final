@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { optimizeCloudinaryUrl } from '@/lib/cloudinaryOptimize';
 const principalSponsorsImage = 'https://res.cloudinary.com/dk8njsy83/image/upload/v1763448463/582268502_1365357671787380_7430866733248565310_n_1_qjzhka.jpg';
 const guestsImage = 'https://res.cloudinary.com/dk8njsy83/image/upload/v1763451609/761ffb2a-d3a7-4d3a-8dbe-00db0f811089_tdvj9t.png';
-import anchorIcon from '@assets/image_1763448087302.png';
 
 const DressCodeSection = () => {
   const principalSponsorsColors = [
@@ -54,9 +53,6 @@ const DressCodeSection = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="bg-white shadow-teal border border-primary/20 rounded-xl p-8 hover-elegant transition-all duration-500 h-full relative">
-              {/* Anchor Decoration */}
-              <img src={anchorIcon} alt="" className="absolute top-2 right-2 w-16 md:w-20 opacity-80" />
-              
               <div className="text-center">
                 <motion.div
                   initial={{ scale: 0.8 }}
@@ -114,9 +110,6 @@ const DressCodeSection = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="bg-white shadow-teal border border-primary/20 rounded-xl p-8 hover-elegant transition-all duration-500 h-full relative">
-              {/* Anchor Decoration */}
-              <img src={anchorIcon} alt="" className="absolute top-2 left-2 w-16 md:w-20 opacity-80" />
-              
               <div className="text-center">
                 <motion.div
                   initial={{ scale: 0.8 }}
