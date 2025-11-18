@@ -101,11 +101,6 @@ const Navigation = () => {
               alt="P&D Logo" 
               className="h-12 w-auto"
             />
-            <img 
-              src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763445212/6522e6a5-cc20-4cc2-89a4-089a11ab2bdf-removebg-preview_qb660m.png" 
-              alt="Compass" 
-              className="h-10 w-10 object-contain"
-            />
           </div>
 
           {/* Desktop Navigation */}
