@@ -162,7 +162,11 @@ const VenueSection = () => {
                         className="inline-flex items-center gap-2 bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-600/90 transition-colors duration-200 shadow-md hover:shadow-lg"
                         data-testid={`button-${venue.title.toLowerCase()}-location`}
                       >
-                        <MapPin className="w-4 h-4" />
+                        <img 
+                          src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763445212/6522e6a5-cc20-4cc2-89a4-089a11ab2bdf-removebg-preview_qb660m.png" 
+                          alt="Compass" 
+                          className="w-5 h-5 object-contain"
+                        />
                         <span className="font-semibold">Get Directions</span>
                         <ExternalLink className="w-4 h-4" />
                       </a>
