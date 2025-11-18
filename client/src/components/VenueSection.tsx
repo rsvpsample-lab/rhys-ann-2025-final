@@ -35,7 +35,7 @@ const VenueSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 6.8 }}
         >
-          <h1 className="text-4xl font-display font-light mb-2 text-primary" data-testid="text-venue-section-title">
+          <h1 className="text-4xl font-display font-light mb-2 text-yellow-600" data-testid="text-venue-section-title">
             Venue
           </h1>
         </motion.div>
@@ -51,16 +51,16 @@ const VenueSection = () => {
               {/* Modern Creative Container */}
               <div className="relative max-w-5xl mx-auto">
                 {/* Decorative background layers */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-2xl blur-xl opacity-60" />
+                <div className="absolute -inset-4 bg-gradient-to-br from-yellow-600/10 via-yellow-600/5 to-transparent rounded-2xl blur-xl opacity-60" />
                 <div className="absolute -inset-2 bg-card/30 backdrop-blur-sm rounded-xl" />
 
                 {/* Main Content Card */}
-                <div className="relative bg-white rounded-xl shadow-teal overflow-hidden border border-primary/20">
+                <div className="relative bg-white rounded-xl shadow-teal overflow-hidden border border-yellow-600/20">
                   {/* Header with decorative elements */}
-                  <div className="relative bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 p-8 border-b-2 border-primary/20">
+                  <div className="relative bg-gradient-to-r from-yellow-600/5 via-yellow-600/10 to-yellow-600/5 p-8 border-b-2 border-yellow-600/20">
                     {/* Decorative corners */}
-                    <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-primary/40" />
-                    <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-primary/40" />
+                    <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-600/40" />
+                    <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-yellow-600/40" />
 
                     <div className="text-center relative z-10">
                       <motion.div 
@@ -72,15 +72,15 @@ const VenueSection = () => {
                           {venue.title}
                         </h2>
                         <div className="flex items-center justify-center gap-2 mb-1">
-                          <div className="w-8 h-px bg-primary/40" />
-                          <div className="w-2 h-2 rounded-full bg-primary" />
-                          <div className="w-8 h-px bg-primary/40" />
+                          <div className="w-8 h-px bg-yellow-600/40" />
+                          <div className="w-2 h-2 rounded-full bg-yellow-600" />
+                          <div className="w-8 h-px bg-yellow-600/40" />
                         </div>
-                        <h3 className="font-body text-primary font-semibold text-lg md:text-xl" data-testid={`text-${venue.title.toLowerCase()}-name`}>
+                        <h3 className="font-body text-yellow-600 font-semibold text-lg md:text-xl" data-testid={`text-${venue.title.toLowerCase()}-name`}>
                           {venue.name}
                         </h3>
                         <div className="flex items-center justify-center gap-2 mt-3">
-                          <MapPin className="w-4 h-4 text-primary" />
+                          <MapPin className="w-4 h-4 text-yellow-600" />
                           <p className="text-sm font-body text-muted-foreground" data-testid={`text-${venue.title.toLowerCase()}-address`}>
                             {venue.address}
                           </p>
@@ -93,7 +93,7 @@ const VenueSection = () => {
                   <div className="relative p-6 md:p-8">
                     <div className="relative overflow-hidden rounded-lg">
                       {/* Image frame decoration */}
-                      <div className="absolute -inset-1 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg" />
+                      <div className="absolute -inset-1 bg-gradient-to-br from-yellow-600/20 to-yellow-600/5 rounded-lg" />
                       <img
                         src={venue.image}
                         alt={venue.name}
@@ -109,8 +109,8 @@ const VenueSection = () => {
                     {/* Left Column - Description */}
                     <div className="space-y-4">
                       <div className="flex items-center gap-2 mb-3">
-                        <div className="w-1 h-6 bg-primary rounded-full" />
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-primary">About the Venue</h4>
+                        <div className="w-1 h-6 bg-yellow-600 rounded-full" />
+                        <h4 className="text-sm font-semibold uppercase tracking-wider text-yellow-600">About the Venue</h4>
                       </div>
                       <p className="text-base font-body leading-relaxed text-foreground/90" data-testid={`text-${venue.title.toLowerCase()}-description`}>
                         {venue.description}
@@ -123,10 +123,10 @@ const VenueSection = () => {
                     {/* Right Column - Map */}
                     <div className="space-y-4">
                       <div className="flex items-center gap-2 mb-3">
-                        <div className="w-1 h-6 bg-primary rounded-full" />
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-primary">Location Map</h4>
+                        <div className="w-1 h-6 bg-yellow-600 rounded-full" />
+                        <h4 className="text-sm font-semibold uppercase tracking-wider text-yellow-600">Location Map</h4>
                       </div>
-                      <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-xl border-2 border-primary/20">
+                      <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-xl border-2 border-yellow-600/20">
                         <iframe
                           src={venue.mapEmbed}
                           width="100%"
@@ -142,11 +142,11 @@ const VenueSection = () => {
                   </div>
 
                   {/* Footer with Time and Directions */}
-                  <div className="relative bg-gradient-to-r from-primary/5 via-transparent to-primary/5 px-6 md:px-8 py-6 border-t border-primary/20">
+                  <div className="relative bg-gradient-to-r from-yellow-600/5 via-transparent to-yellow-600/5 px-6 md:px-8 py-6 border-t border-yellow-600/20">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                      <div className="flex items-center gap-3 bg-white px-4 py-3 rounded-lg shadow-sm border border-primary/20">
-                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                          <MapPin className="w-5 h-5 text-primary" />
+                      <div className="flex items-center gap-3 bg-white px-4 py-3 rounded-lg shadow-sm border border-yellow-600/20">
+                        <div className="w-10 h-10 rounded-full bg-yellow-600/10 flex items-center justify-center">
+                          <MapPin className="w-5 h-5 text-yellow-600" />
                         </div>
                         <div className="text-left">
                           <p className="text-xs text-muted-foreground uppercase tracking-wide">Start Time</p>
@@ -159,7 +159,7 @@ const VenueSection = () => {
                         href={venue.mapUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-md hover:shadow-lg"
+                        className="inline-flex items-center gap-2 bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-600/90 transition-colors duration-200 shadow-md hover:shadow-lg"
                         data-testid={`button-${venue.title.toLowerCase()}-location`}
                       >
                         <MapPin className="w-4 h-4" />

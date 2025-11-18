@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <motion.footer 
-      className="bg-white text-foreground py-16 px-4 relative overflow-hidden border-t-2 border-primary/20"
+      className="bg-white text-foreground py-16 px-4 relative overflow-hidden border-t-2 border-yellow-600/20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 12.5 }}
@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h2 className="text-3xl sm:text-4xl mb-2 text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
               RHYS
-              <span className="text-primary mx-3">&</span>
+              <span className="text-yellow-600 mx-3">&</span>
               ANN
             </h2>
             <p className="text-foreground text-lg">
@@ -32,12 +32,12 @@ const Footer = () => {
           {/* Decorative Elements */}
           <div className="flex justify-center items-center space-x-4 py-6">
             <div className="w-16 h-px bg-border"></div>
-            <Heart className="w-6 h-6 text-primary animate-float" />
+            <Heart className="w-6 h-6 text-yellow-600 animate-float" />
             <div className="w-16 h-px bg-border"></div>
           </div>
 
           {/* Confidentiality Message */}
-          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/20 rounded-lg p-6">
+          <div className="max-w-3xl mx-auto bg-yellow-600/5 border border-yellow-600/20 rounded-lg p-6">
             <p className="text-foreground leading-relaxed text-sm" data-testid="text-confidentiality">
               We kindly request that you treat this invitation with utmost confidentiality. Our wedding is an intimate and small ceremony, reserved for our dearest and closest loved ones. We trust that only those invited will be present, so we ask that you refrain from sharing this information with others. Your understanding and respect for our privacy are sincerely appreciated. Thank you for being part of our special day.
             </p>
@@ -77,7 +77,7 @@ const Footer = () => {
         </motion.div>
       </div>
       {/* Background Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary/20 to-transparent opacity-50 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-yellow-600/20 to-transparent opacity-50 pointer-events-none"></div>
     </motion.footer>
   );
 };

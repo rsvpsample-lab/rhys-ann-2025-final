@@ -92,7 +92,7 @@ const FAQSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 11.8 }}
         >
-          <h2 className="text-5xl font-display font-light italic text-primary mb-8" data-testid="text-faq-title">
+          <h2 className="text-5xl font-display font-light italic text-yellow-600 mb-8" data-testid="text-faq-title">
             Frequently Asked Questions
           </h2>
           <p className="text-lg font-body text-foreground max-w-2xl mx-auto">
@@ -106,7 +106,7 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="bg-white shadow-teal border border-primary/20 rounded-xl overflow-hidden"
+              className="bg-white shadow-teal border border-yellow-600/20 rounded-xl overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 12.1 + (index * 0.1) }}
@@ -116,16 +116,16 @@ const FAQSection = () => {
                 className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gold/5 transition-colors duration-300"
               >
                 <div className="flex items-center gap-3">
-                  <faq.icon className="w-5 h-5 text-primary flex-shrink-0" />
+                  <faq.icon className="w-5 h-5 text-yellow-600 flex-shrink-0" />
                   <span className="text-xl text-foreground font-body font-semibold">
                     {faq.question}
                   </span>
                 </div>
                 <div className="flex-shrink-0">
                   {openItems.includes(index) ? (
-                    <ChevronUp className="w-5 h-5 text-primary" />
+                    <ChevronUp className="w-5 h-5 text-yellow-600" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-primary" />
+                    <ChevronDown className="w-5 h-5 text-yellow-600" />
                   )}
                 </div>
               </button>
@@ -137,12 +137,12 @@ const FAQSection = () => {
                     {faq.answer}
                   </p>
                   {faq.contactInfo && (
-                    <div className="mt-6 bg-gradient-to-br from-primary/5 to-gold/5 rounded-lg p-6 border border-primary/10">
+                    <div className="mt-6 bg-gradient-to-br from-yellow-600/5 to-gold/5 rounded-lg p-6 border border-yellow-600/10">
                       <div className="flex items-center gap-4 flex-wrap">
                         <img 
                           src={faq.contactInfo.profilePic} 
                           alt={faq.contactInfo.name}
-                          className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                          className="w-16 h-16 rounded-full object-cover border-2 border-yellow-600/20"
                           data-testid="img-contact-profile"
                         />
                         <div className="flex-1 min-w-0">
@@ -152,7 +152,7 @@ const FAQSection = () => {
                           <div className="space-y-1">
                             <a 
                               href={`tel:${faq.contactInfo.phone}`}
-                              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                              className="flex items-center gap-2 text-foreground hover:text-yellow-600 transition-colors"
                               data-testid="link-contact-phone"
                             >
                               <Phone className="w-4 h-4" />
@@ -162,7 +162,7 @@ const FAQSection = () => {
                               href={`https://m.me/${faq.contactInfo.messenger.replace(' ', '')}`}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                              className="flex items-center gap-2 text-foreground hover:text-yellow-600 transition-colors"
                               data-testid="link-contact-messenger"
                             >
                               <SiMessenger className="w-4 h-4" />

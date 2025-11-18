@@ -115,7 +115,7 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
           transition={{ delay: 0.2 }}
           className="inline-flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-6 py-3 mb-4"
         >
-          <Heart className="w-5 h-5 text-primary" />
+          <Heart className="w-5 h-5 text-yellow-600" />
           <span className="text-foreground font-medium">
             Question {currentQuestion + 1} of {questions.length}
           </span>
@@ -127,7 +127,7 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
               key={idx}
               className={`h-2 rounded-full transition-all duration-300 ${
                 idx < currentQuestion
-                  ? 'w-8 bg-primary'
+                  ? 'w-8 bg-yellow-600'
                   : idx === currentQuestion
                   ? 'w-12 bg-foreground'
                   : 'w-8 bg-muted-foreground/30'
@@ -166,13 +166,13 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
                   disabled={selectedAnswer !== null}
                   className={`w-full py-6 text-lg font-medium transition-all duration-300 ${
                     selectedAnswer === null
-                      ? 'bg-primary hover:bg-accent text-primary-foreground hover:scale-105'
+                      ? 'bg-yellow-600 hover:bg-yellow-500 text-white hover:scale-105'
                       : selectedAnswer === index
                       ? isCorrect
-                        ? 'bg-primary text-primary-foreground scale-105'
+                        ? 'bg-yellow-600 text-white scale-105'
                         : 'bg-secondary text-white scale-105'
                       : index === currentQ.correctAnswer && selectedAnswer !== null
-                      ? 'bg-primary text-primary-foreground'
+                      ? 'bg-yellow-600 text-white'
                       : 'bg-muted text-muted-foreground'
                   }`}
                   data-testid={`answer-${index}`}
@@ -202,7 +202,7 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
               } : {}}
               transition={{ duration: 0.5, repeat: 2 }}
               className={`inline-flex items-center gap-3 px-8 py-4 rounded-full text-white font-semibold text-lg ${
-                isCorrect ? 'bg-primary' : 'bg-secondary'
+                isCorrect ? 'bg-yellow-600' : 'bg-secondary'
               }`}
             >
               {isCorrect ? (
@@ -221,7 +221,7 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
       {/* Score indicator */}
       <div className="mt-6 text-center">
         <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2">
-          <Star className="w-4 h-4 text-primary" />
+          <Star className="w-4 h-4 text-yellow-600" />
           <span className="text-white text-sm font-medium" data-testid="text-current-score">
             Score: {score}/{questions.length}
           </span>

@@ -70,7 +70,7 @@ const RSVPSection = ({ rsvpLink }: RSVPSectionProps) => {
               transition={{ duration: 0.6, delay: 11.4 }}
             >
               {/* Message with contact details */}
-              <div className="mt-8 bg-white rounded-2xl p-8 max-w-2xl mx-auto shadow-teal border border-primary/20">
+              <div className="mt-8 bg-white rounded-2xl p-8 max-w-2xl mx-auto shadow-teal border border-yellow-600/20">
                 <p 
                   className="text-base md:text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto"
                   data-testid="text-rsvp-message"
@@ -85,14 +85,14 @@ const RSVPSection = ({ rsvpLink }: RSVPSectionProps) => {
                     href={ rsvpLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg"
+                    className="inline-block bg-yellow-600 text-white hover:bg-yellow-600/90 font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg"
                     data-testid="button-rsvp"
                   >
                     RSVP Now
                   </a>
                 </div>
                 <p className="text-center">
-                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">RSVP DUE DATE: November 20, 2025</span>
+                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-white bg-yellow-600">RSVP DUE DATE: November 20, 2025</span>
                 </p>
               </div>
             </motion.div>

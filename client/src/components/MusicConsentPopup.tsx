@@ -28,16 +28,16 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
             transition={{ type: "spring", duration: 0.5 }}
             className="bg-background rounded-lg p-8 md:p-12 max-w-lg w-full mx-4 shadow-2xl border border-border relative overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-primary opacity-20"></div>
-            <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-primary opacity-20"></div>
-            <div className="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-primary opacity-20"></div>
-            <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-primary opacity-20"></div>
+            <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-600 opacity-20"></div>
+            <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-yellow-600 opacity-20"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-yellow-600 opacity-20"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-yellow-600 opacity-20"></div>
             
             <div className="relative text-center space-y-6">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"></div>
-                <Heart className="w-4 h-4 text-primary fill-primary" />
-                <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary"></div>
+                <div className="h-px w-16 bg-gradient-to-r from-transparent to-yellow-600"></div>
+                <Heart className="w-4 h-4 text-yellow-600 fill-yellow-600" />
+                <div className="h-px w-16 bg-gradient-to-l from-transparent to-yellow-600"></div>
               </div>
 
               <motion.div
@@ -54,14 +54,14 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
               </motion.div>
               
               <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary font-serif tracking-wide">
+                <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 font-serif tracking-wide">
                   A Musical Journey
                 </h2>
                 
                 <div className="flex items-center justify-center gap-2">
-                  <div className="h-px w-12 bg-primary"></div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <div className="h-px w-12 bg-primary"></div>
+                  <div className="h-px w-12 bg-yellow-600"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-600"></div>
+                  <div className="h-px w-12 bg-yellow-600"></div>
                 </div>
 
                 <p className="text-foreground/80 leading-relaxed text-base md:text-lg italic px-4">
@@ -72,7 +72,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
               <div className="flex flex-col sm:flex-row gap-4 pt-8">
                 <Button
                   onClick={() => handleConsent(true)}
-                  className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-5 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-base"
+                  className="flex-1 bg-yellow-600 hover:bg-yellow-600/90 text-white font-bold py-5 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-base"
                   data-testid="button-allow-music"
                 >
                   <Volume2 className="h-5 w-5 mr-2" />
@@ -81,7 +81,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 <Button
                   onClick={() => handleConsent(false)}
                   variant="outline"
-                  className="flex-1 border-2 border-border hover:border-primary text-foreground hover:text-primary bg-transparent hover:bg-muted font-medium py-5 px-6 rounded-lg transition-all duration-300 text-base"
+                  className="flex-1 border-2 border-border hover:border-yellow-600 text-foreground hover:text-yellow-600 bg-transparent hover:bg-muted font-medium py-5 px-6 rounded-lg transition-all duration-300 text-base"
                   data-testid="button-skip-music"
                 >
                   <VolumeX className="h-5 w-5 mr-2" />
@@ -90,9 +90,9 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
               </div>
 
               <div className="flex items-center justify-center gap-2 pt-4">
-                <Heart className="w-3 h-3 text-primary fill-primary opacity-50" />
-                <div className="w-1 h-1 rounded-full bg-primary opacity-50"></div>
-                <Heart className="w-3 h-3 text-primary fill-primary opacity-50" />
+                <Heart className="w-3 h-3 text-yellow-600 fill-yellow-600 opacity-50" />
+                <div className="w-1 h-1 rounded-full bg-yellow-600 opacity-50"></div>
+                <Heart className="w-3 h-3 text-yellow-600 fill-yellow-600 opacity-50" />
               </div>
             </div>
           </motion.div>

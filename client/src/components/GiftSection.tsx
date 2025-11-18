@@ -38,8 +38,8 @@ const GiftSection = () => {
         >
           <div className="bg-card/30 border border-border rounded-xl p-12 shadow-soft hover-elegant">
             {/* Icon */}
-            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8">
-              <Heart className="w-10 h-10 text-primary" />
+            <div className="w-20 h-20 bg-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-8">
+              <Heart className="w-10 h-10 text-yellow-600" />
             </div>
 
             {/* Main Message */}
