@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { optimizeCloudinaryUrl } from '@/lib/cloudinaryOptimize';
 const principalSponsorsImage = 'https://res.cloudinary.com/dk8njsy83/image/upload/v1763448463/582268502_1365357671787380_7430866733248565310_n_1_qjzhka.jpg';
-const guestsImage = 'https://res.cloudinary.com/dk8njsy83/image/upload/v1763451231/0d0019bc-6897-4689-9795-017906029d68_c4ca7a.png';
+const guestsImage = 'https://res.cloudinary.com/dk8njsy83/image/upload/v1763451609/761ffb2a-d3a7-4d3a-8dbe-00db0f811089_tdvj9t.png';
 import anchorIcon from '@assets/image_1763448087302.png';
 
 const DressCodeSection = () => {
@@ -131,7 +131,7 @@ const DressCodeSection = () => {
                     <div className="text-center px-4 mb-3">
                       <p className="text-base font-semibold text-foreground mb-2">Smart Casual</p>
                       <p className="text-sm text-foreground mb-3">
-                        <strong>Gentlemen:</strong> Smart casual and blue jeans are welcome<br/>
+                        <strong>Gentlemen:</strong> Smart casual with blue jeans or maong<br/>
                         <strong>Ladies:</strong> Mid-length maxi dress in Royal Blue, Dusty Blue, Gold, or Sage Green
                       </p>
                     </div>
@@ -194,7 +194,7 @@ const DressCodeSection = () => {
                   <li>T-shirts</li>
                   <li>Slippers</li>
                   <li>Sleeveless shirts</li>
-                  <li>Black jeans and maong pants</li>
+                  <li>Black jeans</li>
                 </ul>
               </div>
               
