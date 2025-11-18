@@ -67,28 +67,24 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             className="w-[45%] pl-4 md:pl-8"
                             variants={cardVariants}
                         >
-                            <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-yellow-600/30 flex items-center justify-center">
-                                {iconUrl ? (
-                                    <img src={iconUrl} alt={timelineEvent.event} className="w-10 h-10 md:w-12 md:h-12 object-contain" />
-                                ) : IconComponent ? (
-                                    <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
-                                ) : null}
-                            </div>
+                            {iconUrl ? (
+                                <img src={iconUrl} alt={timelineEvent.event} className="w-16 h-16 md:w-20 md:h-20 object-contain" />
+                            ) : IconComponent ? (
+                                <IconComponent className="w-16 h-16 md:w-20 md:h-20 text-yellow-600" />
+                            ) : null}
                         </motion.div>
                     </>
                 ) : (
                     <>
                         <motion.div 
-                            className="w-[45%] pr-4 md:pr-8 text-right"
+                            className="w-[45%] pr-4 md:pr-8 text-right flex justify-end"
                             variants={cardVariants}
                         >
-                            <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-yellow-600/30 flex items-center justify-center ml-auto">
-                                {iconUrl ? (
-                                    <img src={iconUrl} alt={timelineEvent.event} className="w-10 h-10 md:w-12 md:h-12 object-contain" />
-                                ) : IconComponent ? (
-                                    <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
-                                ) : null}
-                            </div>
+                            {iconUrl ? (
+                                <img src={iconUrl} alt={timelineEvent.event} className="w-16 h-16 md:w-20 md:h-20 object-contain" />
+                            ) : IconComponent ? (
+                                <IconComponent className="w-16 h-16 md:w-20 md:h-20 text-yellow-600" />
+                            ) : null}
                         </motion.div>
                         <div className="w-[10%]"></div>
                         <motion.div 
