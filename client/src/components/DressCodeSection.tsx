@@ -71,7 +71,7 @@ const DressCodeSection = () => {
                     <div className="text-center px-4">
                       <p className="text-base font-semibold text-foreground mb-2">Formal Attire</p>
                       <p className="text-sm text-foreground mb-3">
-                        <strong>NINONG:</strong> Barong with slacks (black)<br/>
+                        <strong>NINONG:</strong> Barong with slacks (black/blue)<br/>
                         <strong>NINANG:</strong> Shades of Blue dress
                       </p>
                     </div>
