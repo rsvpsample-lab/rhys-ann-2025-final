@@ -95,11 +95,16 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3">
             <img 
               src="https://res.cloudinary.com/dna2lcbua/image/upload/v1763441125/972c77f1-2a7c-4b0a-b5c6-c0609993e4af_kdejrj.png" 
               alt="P&D Logo" 
               className="h-12 w-auto"
+            />
+            <img 
+              src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763445212/6522e6a5-cc20-4cc2-89a4-089a11ab2bdf-removebg-preview_qb660m.png" 
+              alt="Compass" 
+              className="h-10 w-10 object-contain"
             />
           </div>
 
