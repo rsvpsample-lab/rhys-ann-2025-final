@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 
 const EntourageSection = () => {
@@ -12,31 +13,29 @@ const EntourageSection = () => {
   ];
 
   const ninong = [
-    { name: "MR. RODEL C PAGATPATAN" },
-    { name: "MR. SOLOMON FAUSTINO" },
-    { name: "MR. ARNOLD M MANIPON" },
-    { name: "MR. JAYSON C PAGATPATAN" },
-    { name: "MR. JOSEPH P ESPINOSA" },
-    { name: "MR. JAY M MONTALBAN" },
-    { name: "MR. CYRIL GLENN R SAN PASCUAL" },
-    { name: "MR. RAMSES G GLORIA" },
-    { name: "MR. REMIE L ESPIRITU" },
-    { name: "MR. GERALD M UMALI" },
-    { name: "MR. ROLLY E SALGADO" }
+    { name: "VADM Ferdinand S Golez AFP(RET)" },
+    { name: "VADM Toribio D Adaci Jr AFP(RET)" },
+    { name: "RADM Allan M Javier PN" },
+    { name: "COMMO Dwight Steven M Dulnoan PN" },
+    { name: "COMMO Danilo S Aguit PN(RET)" },
+    { name: "COMMO Alex V Gianan PN" },
+    { name: "CAPT Dario A Yanto Jr PN(MNSA)" },
+    { name: "CAPT Ferdinand P Gloria PN(GSC)" },
+    { name: "COL Jimmy B Lucquiao PA(GSC)" },
+    { name: "LTC Allan G Reyes PAF(GSC)" }
   ];
 
   const ninang = [
-    { name: "Mrs. Lolita C Pagatpatan" },
-    { name: "Mrs. Jean B Faustino" },
-    { name: "Mrs. Realane M Pagatpatan" },
-    { name: "Mrs. Nenita C Pagatpatan" },
-    { name: "Mrs. Kristine Joy P Espinosa" },
-    { name: "Mrs. Shiella Mae M Montalban" },
-    { name: "Mrs. Lhea B Damo" },
-    { name: "Mrs. Daisy P Fabian" },
-    { name: "Mrs. Cecilia A. Imperial Civ Hr" },
-    { name: "Mrs. Sherryl B Umali" },
-    { name: "Mrs. Maribel E Salgado" }
+    { name: "Mrs. Annie G. Rosales" },
+    { name: "Mrs. Cecilia A. Imperial" },
+    { name: "Mrs. Lucena Z. Grajo" },
+    { name: "Mrs. Mary Jane DS. Dulnoan" },
+    { name: "Mrs. Rosalinda A. Abucejo" },
+    { name: "Miss Charmaine V. Calungsod Civ HR" },
+    { name: "Mrs. Marlyn N. Pabalinas Civ HR" },
+    { name: "Ms. Celia Strong" },
+    { name: "Mrs. Lani Rose A. Manipon" },
+    { name: "Ms. Carmelie Daisy Arcillas" }
   ];
 
   const secondarySponsors = {
