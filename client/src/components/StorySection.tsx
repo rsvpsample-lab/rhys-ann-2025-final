@@ -40,14 +40,12 @@ const StorySection = () => {
           <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 relative">
             {/* Decorative Icon */}
             <div className="mb-6">
-              <Heart className="w-10 h-10 text-primary" />
+              <Heart className="w-10 h-10 text-yellow-600" />
             </div>
 
             {/* Love Description */}
             <div className="space-y-6 text-base text-foreground/90 leading-relaxed" data-testid="text-story-content">
-              <p className="text-lg">
-                Love is patient, love is kind. It's finding your best friend, your partner, and your forever in one person. It's the promise to stand together through every season of life.
-              </p>
+              <p className="text-lg">Love is patient, love is kind. It is finding your best friendnemy, partner, and forever in one person. It's a commitment to stand together through every season of life and to choose each other, regardless of the trials the sea of life may bring.</p>
               
               <blockquote className="border-l-4 border-primary pl-4 py-2 italic text-foreground/80">
                 <p className="mb-2">"Love is patient, love is kind. It does not envy, it does not boast, it is not proud."</p>
