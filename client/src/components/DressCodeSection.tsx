@@ -13,7 +13,8 @@ const DressCodeSection = () => {
   const guestsColors = [
     { name: 'Royal Blue', color: '#2563eb', hex: '#2563eb' },
     { name: 'Dusty Blue', color: '#7c9eb2', hex: '#7c9eb2' },
-    { name: 'Gold', color: '#fbbf24', hex: '#fbbf24' }
+    { name: 'Gold', color: '#fbbf24', hex: '#fbbf24' },
+    { name: 'Sage Green', color: '#86a986', hex: '#86a986' }
   ];
 
   return (
