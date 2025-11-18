@@ -43,25 +43,25 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
           <img 
             src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443058/wheel-removebg-preview_milwmr.png" 
             alt="" 
-            className="absolute top-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float pointer-events-none"
+            className="absolute top-4 left-4 w-16 h-16 md:w-24 md:h-24 object-contain opacity-60 animate-float pointer-events-none"
             data-testid="decoration-flower-invitation-topleft"
           />
           <img 
             src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443057/259dd688-c7cf-4c7c-a6f8-ee6f89291827-removebg-preview_u1kkce.png" 
             alt="" 
-            className="absolute top-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none"
+            className="absolute top-4 right-4 w-16 h-16 md:w-24 md:h-24 object-contain opacity-60 animate-float-delayed pointer-events-none"
             data-testid="decoration-flower-invitation-topright"
           />
           <img 
             src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443057/259dd688-c7cf-4c7c-a6f8-ee6f89291827-removebg-preview_u1kkce.png" 
             alt="" 
-            className="absolute bottom-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none transform rotate-45"
+            className="absolute bottom-4 left-4 w-16 h-16 md:w-24 md:h-24 object-contain opacity-60 animate-float-delayed pointer-events-none transform rotate-45"
             data-testid="decoration-flower-invitation-bottomleft"
           />
           <img 
             src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443057/hook-removebg-preview_mfiquf.png" 
             alt="" 
-            className="absolute bottom-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float pointer-events-none transform -rotate-12"
+            className="absolute bottom-4 right-4 w-16 h-16 md:w-24 md:h-24 object-contain opacity-60 animate-float pointer-events-none transform -rotate-12"
             data-testid="decoration-flower-invitation-bottomright"
           />
 
