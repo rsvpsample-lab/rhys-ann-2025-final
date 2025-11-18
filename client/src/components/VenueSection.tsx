@@ -35,8 +35,13 @@ const VenueSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 6.8 }}
         >
-          <h1 className="text-4xl font-display font-light mb-2 text-yellow-600" data-testid="text-venue-section-title">
+          <h1 className="text-4xl font-display font-light mb-2 text-yellow-600 flex items-center justify-center gap-3" data-testid="text-venue-section-title">
             Venue
+            <img 
+              src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763445212/6522e6a5-cc20-4cc2-89a4-089a11ab2bdf-removebg-preview_qb660m.png" 
+              alt="Venue icon" 
+              className="w-10 h-10 object-contain"
+            />
           </h1>
         </motion.div>
         {/* Venues List */}
