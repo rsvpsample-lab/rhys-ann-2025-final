@@ -95,7 +95,7 @@ const HashtagGiftsSection = () => {
                   </p>
                   <div className="inline-block border-2 border-primary rounded-lg px-6 py-3 bg-primary/5">
                     <p className="text-primary text-lg md:text-xl font-semibold" data-testid="text-wedding-hashtag">
-                      #RhysAndAnnForever
+                      #RHYS&ANNdyinglove
                     </p>
                   </div>
                 </div>

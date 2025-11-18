@@ -276,7 +276,7 @@ export default function ScrollTriggeredTimeline() {
                         Help us capture moments on our special day by using the hashtag
                     </p>
                     <div className="inline-block border-2 border-yellow-600 rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
-                        <p className="text-yellow-600 text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag">#RhysAndAnn2025</p>
+                        <p className="text-yellow-600 text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag">#bANNwithbRHYS</p>
                     </div>
                 </div>
             </motion.div>
