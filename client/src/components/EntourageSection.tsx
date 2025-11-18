@@ -125,7 +125,7 @@ const EntourageSection = () => {
             <div data-testid="section-ninong">
               <h4 className="text-xs md:text-sm tracking-widest uppercase text-gray-500 mb-3">Ninong</h4>
               {ninong.map((sponsor, idx) => (
-                <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-ninong-${idx}`}>
+                <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-ninong-${idx}`}>
                   {sponsor.name}
                 </p>
               ))}
