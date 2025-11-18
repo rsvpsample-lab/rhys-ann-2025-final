@@ -72,7 +72,11 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
               <div className="relative w-20 h-20">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 animate-pulse" />
                 <div className="relative w-full h-full rounded-full bg-white border-2 border-primary/20 flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-primary fill-primary" />
+                  <img 
+                    src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763442716/751525ab-5907-4590-885a-c08578c62b36-removebg-preview_itqfp2.png" 
+                    alt="Wedding symbol" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
               </div>
             </div>
