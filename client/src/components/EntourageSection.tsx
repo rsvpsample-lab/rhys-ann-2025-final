@@ -49,7 +49,7 @@ const EntourageSection = () => {
     ],
     cord: [
       { name: "ASN Jhomar Rhay H Niones PN" },
-      { name: "Mrs. Devine Niones" }
+      { name: "Ma. Divina Niones" }
     ]
   };
 
