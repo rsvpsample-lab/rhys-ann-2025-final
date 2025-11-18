@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { Clock, Camera, Utensils, Music, Heart, Users, Wine, PartyPopper, Sparkles } from 'lucide-react';
+import { Clock, Camera, Utensils, Music, Heart, Users, Wine, PartyPopper, Sparkles, BookOpen, UserSquare, Disc3 } from 'lucide-react';
 
 interface TimelineEvent {
     time: string;
@@ -29,10 +29,9 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
             data-testid={`timeline-card-${i}`}
         >
             {/* Timeline dot in center */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 rounded-full flex items-center justify-center z-20"
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 rounded-full flex items-center justify-center z-20 bg-yellow-600"
                 style={{
-                    background: 'hsl(var(--primary))',
-                    boxShadow: '0 0 0 4px rgba(212, 168, 83, 0.2)'
+                    boxShadow: '0 0 0 4px rgba(202, 138, 4, 0.2)'
                 }}
             >
                 <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
@@ -49,7 +48,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                         >
                             <div className="space-y-1">
                                 {timelineEvent.time && (
-                                    <div className="text-xs font-bold text-primary">
+                                    <div className="text-xs font-bold text-yellow-600">
                                         {timelineEvent.time}
                                     </div>
                                 )}
@@ -66,8 +65,8 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             className="w-[45%] pl-4 md:pl-8"
                             variants={cardVariants}
                         >
-                            <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-primary/30 flex items-center justify-center">
-                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+                            <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-yellow-600/30 flex items-center justify-center">
+                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
                             </div>
                         </motion.div>
                     </>
@@ -77,8 +76,8 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             className="w-[45%] pr-4 md:pr-8 text-right"
                             variants={cardVariants}
                         >
-                            <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-primary/30 flex items-center justify-center ml-auto">
-                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+                            <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-yellow-600/30 flex items-center justify-center ml-auto">
+                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
                             </div>
                         </motion.div>
                         <div className="w-[10%]"></div>
@@ -88,7 +87,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                         >
                             <div className="space-y-1">
                                 {timelineEvent.time && (
-                                    <div className="text-xs font-bold text-primary">
+                                    <div className="text-xs font-bold text-yellow-600">
                                         {timelineEvent.time}
                                     </div>
                                 )}
@@ -147,7 +146,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "2:00 PM",
         event: "Registration",
         description: "Guests arrive and register for the celebration.",
-        icon: Users,
+        icon: BookOpen,
         hueA: 40,
         hueB: 40,
     },
@@ -155,7 +154,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "2:30 PM",
         event: "Entourage Formation",
         description: "Our entourage prepares for the ceremony procession.",
-        icon: Users,
+        icon: UserSquare,
         hueA: 40,
         hueB: 40,
     },
@@ -179,7 +178,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "4:30 PM",
         event: "Reception Starts",
         description: "Join us as we begin the evening celebration.",
-        icon: Sparkles,
+        icon: Users,
         hueA: 40,
         hueB: 40,
     },
@@ -195,7 +194,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "8:30 PM",
         event: "Time to Dance and Wave",
         description: "Let's dance the night away and celebrate!",
-        icon: Music,
+        icon: Disc3,
         hueA: 40,
         hueB: 40,
     },
@@ -212,12 +211,12 @@ export default function ScrollTriggeredTimeline() {
         >
             {/* Enhanced Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-primary/30 rounded-full"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-primary/30 rounded-full"></div>
-                <div className="absolute top-1/3 right-1/3 w-24 h-24 border-2 border-primary/30 rotate-45"></div>
-                <div className="absolute bottom-1/3 left-1/5 w-16 h-16 border border-primary/30 rounded-full"></div>
-                <div className="absolute top-1/2 left-1/6 w-6 h-6 bg-primary/40 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-1/2 right-1/5 w-8 h-8 bg-primary/40 rotate-45"></div>
+                <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-600/30 rounded-full"></div>
+                <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-yellow-600/30 rounded-full"></div>
+                <div className="absolute top-1/3 right-1/3 w-24 h-24 border-2 border-yellow-600/30 rotate-45"></div>
+                <div className="absolute bottom-1/3 left-1/5 w-16 h-16 border border-yellow-600/30 rounded-full"></div>
+                <div className="absolute top-1/2 left-1/6 w-6 h-6 bg-yellow-600/40 rounded-full animate-pulse"></div>
+                <div className="absolute bottom-1/2 right-1/5 w-8 h-8 bg-yellow-600/40 rotate-45"></div>
             </div>
             {/* Floating Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -235,7 +234,7 @@ export default function ScrollTriggeredTimeline() {
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-primary" data-testid="text-timeline-title">
+                    <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-yellow-600" data-testid="text-timeline-title">
                         Wedding Timeline
                     </h2>
                     <p className="max-w-2xl mx-auto text-[#0b0b0b]">
@@ -246,7 +245,7 @@ export default function ScrollTriggeredTimeline() {
             {/* Timeline Cards Container */}
             <div className="relative max-w-4xl mx-auto px-4 py-8">
                 {/* Center vertical line */}
-                <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 -translate-x-1/2"></div>
+                <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-yellow-600/30 -translate-x-1/2"></div>
 
                 {timelineEvents.map((timelineEvent, i) => (
                     <TimelineCard i={i} timelineEvent={timelineEvent} key={`${timelineEvent.event}-${i}`} />
@@ -260,9 +259,9 @@ export default function ScrollTriggeredTimeline() {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <div className="bg-white backdrop-blur-sm border border-primary/30 rounded-2xl p-8 shadow-teal">
+                <div className="bg-white backdrop-blur-sm border border-yellow-600/30 rounded-2xl p-8 shadow-teal">
                     <div className="mb-4">
-                        <Camera className="w-12 h-12 mx-auto text-primary" />
+                        <Camera className="w-12 h-12 mx-auto text-yellow-600" />
                     </div>
                     <h3 className="text-2xl md:text-3xl font-script italic mb-4 text-foreground" data-testid="text-ohsnap-title">
                         Oh Snap!
@@ -270,8 +269,8 @@ export default function ScrollTriggeredTimeline() {
                     <p className="text-sm md:text-base text-muted-foreground mb-4">
                         Help us capture moments on our special day by using the hashtag
                     </p>
-                    <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
-                        <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag">#RhysAndAnn2025</p>
+                    <div className="inline-block border-2 border-yellow-600 rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
+                        <p className="text-yellow-600 text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag">#RhysAndAnn2025</p>
                     </div>
                 </div>
             </motion.div>
