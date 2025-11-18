@@ -234,7 +234,7 @@ export default function ScrollTriggeredTimeline() {
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-yellow-600" data-testid="text-timeline-title">
+                    <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-primary" data-testid="text-timeline-title">
                         Wedding Timeline
                     </h2>
                     <p className="max-w-2xl mx-auto text-[#0b0b0b]">
