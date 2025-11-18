@@ -32,6 +32,7 @@ const Index = () => {
 
     if (consent && audioRef.current) {
       try {
+        audioRef.current.currentTime = 6;
         await audioRef.current.play();
       } catch (error) {
         console.error('Background music playback failed:', error);
