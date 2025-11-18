@@ -17,7 +17,7 @@ const EntourageSection = () => {
     { name: "VADM TORIBIO D ADACI JR AFP(RET)" },
     { name: "RADM ALLAN M JAVIER PN" },
     { name: "COMMO DWIGHT STEVEN M DULNOAN PN" },
-    { name: "COMMO DANILO S AGUIT PN(RET)" },
+    { name: "CAPT DANILO S AGUIT PN(GSC) (RET)" },
     { name: "COMMO ALEX V GIANAN PN" },
     { name: "CAPT DARIO A YANTO JR PN(MNSA)" },
     { name: "CAPT FERDINAND P GLORIA PN(GSC)" },
@@ -30,12 +30,13 @@ const EntourageSection = () => {
     { name: "Mrs. Cecilia A. Imperial Civ HR" },
     { name: "Mrs. Lucena Z. Grajo" },
     { name: "Mrs. Mary Jane DS. Dulnoan" },
-    { name: "Mrs. Rosalinda A. Abucejo" },
     { name: "Miss Charmaine V. Calungsod Civ HR" },
+    { name: "Mrs. Rosalinda A. Abucejo" },
     { name: "Mrs. Marlyn N. Pabalinas Civ HR" },
     { name: "Ms. Celia Strong" },
     { name: "Mrs. Lani Rose A. Manipon" },
-    { name: "Ms. Carmelie Daisy Arcillas" }
+    { name: "Ms. Carmelie Daisy Arcillas" },
+    { name: "Mrs. Ma. Divina Niones" }
   ];
 
   const secondarySponsors = {
