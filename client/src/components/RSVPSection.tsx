@@ -77,9 +77,7 @@ const RSVPSection = ({ rsvpLink }: RSVPSectionProps) => {
                 >
                   We're so excited to celebrate and share this special day with our favorite people! Please message Rhys & Ann on their Facebook accounts or ANSWER THE RSVP BUTTON BELOW to let us know if you'll be joining us.
                 </p>
-                <p className="text-base md:text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto mt-4">
-                  The last day to RSVP is November 20, 2025. Get ready for a day filled with love, laughter, and unforgettable moments!
-                </p>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto mt-4">The last day to RSVP is November 24, 2025. Get ready for a day filled with love, laughter, and unforgettable moments!</p>
                 <div className="text-center mb-6">
                   <a 
                     href={ rsvpLink} 
@@ -92,7 +90,7 @@ const RSVPSection = ({ rsvpLink }: RSVPSectionProps) => {
                   </a>
                 </div>
                 <p className="text-center">
-                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-white bg-yellow-600">RSVP DUE DATE: November 20, 2025</span>
+                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-white bg-yellow-600">RSVP DUE DATE: November 24, 2025</span>
                 </p>
               </div>
             </motion.div>
