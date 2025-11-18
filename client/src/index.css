@@ -10,86 +10,86 @@
 
 @layer base {
   :root {
-    /* Blue, Sage Green & Gold Wedding Theme */
+    /* Blue & Baby Blue Wedding Theme */
     
-    /* PRIMARY - Soft Blue Background */
-    --background: 210 25% 98%; /* Very light blue background */
-    --foreground: 215 50% 20%; /* Deep navy blue text */
+    /* PRIMARY - Baby Blue Background */
+    --background: 200 70% 85%; /* Baby blue background */
+    --foreground: 0 0% 100%; /* White text */
 
-    /* Card Colors - Light Blue with Shadow */
-    --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 215 50% 20%; /* Deep navy blue text */
+    /* Card Colors - Darker Blue with White Text */
+    --card: 210 60% 70%; /* Medium blue cards */
+    --card-foreground: 0 0% 100%; /* White text */
 
     /* Popover Colors */
-    --popover: 0 0% 100%; /* White popover */
-    --popover-foreground: 215 50% 20%; /* Deep navy blue text */
+    --popover: 210 60% 70%; /* Blue popover */
+    --popover-foreground: 0 0% 100%; /* White text */
 
     /* Brand Color */
-    --brand: 215 45% 30%; /* Medium navy blue brand color */
+    --brand: 215 65% 50%; /* Bright blue brand color */
     
-    /* PRIMARY - Deep Blue */
-    --primary: 215 45% 30%; /* Medium navy blue primary */
-    --primary-foreground: 0 0% 100%; /* White text on dark */
+    /* PRIMARY - Bright Blue (replacing gold) */
+    --primary: 215 65% 50%; /* Bright blue primary */
+    --primary-foreground: 0 0% 100%; /* White text */
 
-    /* Secondary Colors - Sage Green */
-    --secondary: 120 20% 85%; /* Light sage green secondary */
-    --secondary-foreground: 215 50% 20%; /* Deep navy blue text */
+    /* Secondary Colors - Light Blue */
+    --secondary: 200 50% 75%; /* Light blue secondary */
+    --secondary-foreground: 0 0% 100%; /* White text */
 
     /* Muted Colors - Soft Blue */
-    --muted: 210 25% 90%; /* Light blue muted */
-    --muted-foreground: 215 35% 40%; /* Medium blue text */
+    --muted: 200 60% 80%; /* Light blue muted */
+    --muted-foreground: 0 0% 100%; /* White text */
 
-    /* ACCENT - Sage Green */
-    --accent: 120 20% 85%; /* Light sage green accent */
-    --accent-foreground: 215 50% 20%; /* Deep navy blue text */
+    /* ACCENT - Bright Blue (replacing sage green) */
+    --accent: 215 65% 50%; /* Bright blue accent */
+    --accent-foreground: 0 0% 100%; /* White text */
 
-    /* Special Accent - Gold for CTAs and highlights */
-    --gold: 45 70% 55%; /* Rich gold for emphasis */
-    --gold-foreground: 215 50% 20%; /* Deep navy blue text on gold */
+    /* Special Accent - Blue for CTAs and highlights (replacing gold) */
+    --gold: 215 65% 50%; /* Bright blue for emphasis */
+    --gold-foreground: 0 0% 100%; /* White text on blue */
     
-    /* Bright Accent - Brighter Gold for emphasis */
-    --gold-bright: 45 85% 65%; /* Bright gold for emphasis */
+    /* Bright Accent - Brighter Blue for emphasis */
+    --gold-bright: 215 75% 60%; /* Brighter blue for emphasis */
     
     /* Teal Accent - Sky Blue for timeline icons */
     --teal: 200 60% 60%; /* Sky blue accent color */
     --teal-foreground: 0 0% 100%; /* White text on blue */
 
-    /* Aesthetic Palette - Blue & Sage tones */
-    --rose-gold: 45 60% 92%; /* Very light gold */
-    --rose-gold-dark: 45 50% 85%; /* Light gold */
-    --amber-glow: 120 15% 88%; /* Light sage green */
-    --warm-light: 210 30% 96%; /* Very light blue */
+    /* Aesthetic Palette - Blue tones */
+    --rose-gold: 200 60% 90%; /* Very light blue */
+    --rose-gold-dark: 200 50% 80%; /* Light blue */
+    --amber-glow: 200 50% 85%; /* Light blue */
+    --warm-light: 200 60% 90%; /* Very light blue */
 
-    /* Natural Accents Palette - Blue & Green tones */
-    --city-blue: 215 40% 50%; /* Medium blue accent */
+    /* Natural Accents Palette - Blue tones */
+    --city-blue: 215 60% 50%; /* Medium blue accent */
     --city-cyan: 200 50% 55%; /* Cyan blue accent */
-    --city-amber: 45 65% 60%; /* Gold accent */
-    --city-purple: 120 25% 45%; /* Sage green accent */
+    --city-amber: 215 65% 50%; /* Blue accent (replacing gold) */
+    --city-purple: 210 55% 60%; /* Medium blue accent */
 
     /* Destructive */
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 210 20% 85%; /* Light blue border */
-    --input: 0 0% 100%; /* White input */
-    --ring: 215 45% 40%; /* Blue accent ring */
+    --border: 200 50% 75%; /* Light blue border */
+    --input: 210 60% 70%; /* Blue input */
+    --ring: 215 65% 50%; /* Blue accent ring */
 
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* Blue & Gold Gradients */
-    --gradient-elegant: linear-gradient(135deg, hsl(210, 30%, 98%), hsl(200, 40%, 95%));
-    --gradient-gold: linear-gradient(135deg, hsl(45, 70%, 55%), hsl(45, 85%, 65%));
-    --gradient-night: linear-gradient(180deg, hsl(210, 25%, 98%) 0%, hsl(200, 30%, 96%) 100%);
-    --gradient-bokeh: radial-gradient(ellipse at center, hsl(215, 45%, 40%) 0%, transparent 60%);
+    /* Blue Gradients */
+    --gradient-elegant: linear-gradient(135deg, hsl(200, 70%, 85%), hsl(200, 60%, 80%));
+    --gradient-gold: linear-gradient(135deg, hsl(215, 65%, 50%), hsl(215, 75%, 60%));
+    --gradient-night: linear-gradient(180deg, hsl(200, 70%, 85%) 0%, hsl(200, 60%, 80%) 100%);
+    --gradient-bokeh: radial-gradient(ellipse at center, hsl(215, 65%, 50%) 0%, transparent 60%);
 
-    /* Blue & Gold Shadows */
-    --shadow-elegant: 0 10px 40px -10px rgba(33, 76, 132, 0.2);
-    --shadow-soft: 0 4px 20px -4px rgba(33, 76, 132, 0.15);
-    --shadow-warm: 0 8px 30px -8px rgba(197, 154, 66, 0.15);
-    --shadow-glow: 0 0 30px rgba(33, 76, 132, 0.1);
-    --shadow-teal: 0 25px 60px -20px hsla(215, 45%, 40%, 0.35);
+    /* Blue Shadows */
+    --shadow-elegant: 0 10px 40px -10px rgba(33, 76, 132, 0.3);
+    --shadow-soft: 0 4px 20px -4px rgba(33, 76, 132, 0.2);
+    --shadow-warm: 0 8px 30px -8px rgba(33, 76, 132, 0.2);
+    --shadow-glow: 0 0 30px rgba(33, 76, 132, 0.2);
+    --shadow-teal: 0 25px 60px -20px hsla(215, 65%, 50%, 0.4);
 
     /* Elegant Typography Scale */
     --font-display: 'Boska', 'Cormorant Garamond', serif; /* Headers - Boska 700 */
@@ -101,14 +101,14 @@
     --transition-elegant: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 210 25% 98%;
-    --sidebar-foreground: 215 50% 20%;
-    --sidebar-primary: 215 45% 30%;
+    --sidebar-background: 200 70% 85%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 215 65% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 120 20% 85%;
-    --sidebar-accent-foreground: 215 50% 20%;
-    --sidebar-border: 210 20% 85%;
-    --sidebar-ring: 215 45% 40%;
+    --sidebar-accent: 215 65% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 200 50% 75%;
+    --sidebar-ring: 215 65% 50%;
   }
 
   /* Custom Wedding Animations */
@@ -181,10 +181,10 @@
 
   @keyframes goldGlow {
     0%, 100% {
-      box-shadow: 0 0 20px rgba(197, 154, 66, 0.4);
+      box-shadow: 0 0 20px rgba(33, 76, 132, 0.4);
     }
     50% {
-      box-shadow: 0 0 40px rgba(197, 154, 66, 0.6);
+      box-shadow: 0 0 40px rgba(33, 76, 132, 0.6);
     }
   }
 
@@ -224,7 +224,7 @@
   body {
     @apply text-foreground font-body;
     font-family: var(--font-body);
-    background: hsl(210, 25%, 98%);
+    background: hsl(200, 70%, 85%);
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -244,14 +244,14 @@
     pointer-events: none;
   }
 
-  /* Gradient Overlays - Blue & Gold Subtle Accents */
+  /* Gradient Overlays - Blue Subtle Accents */
   body::after {
     content: "";
     position: fixed;
     inset: 0;
     background: 
-      radial-gradient(circle at top left, rgba(33, 76, 132, 0.03) 0%, transparent 60%),
-      radial-gradient(circle at bottom right, rgba(197, 154, 66, 0.02) 0%, transparent 60%);
+      radial-gradient(circle at top left, rgba(33, 76, 132, 0.1) 0%, transparent 60%),
+      radial-gradient(circle at bottom right, rgba(33, 76, 132, 0.08) 0%, transparent 60%);
     z-index: 0;
     pointer-events: none;
   }
@@ -659,10 +659,10 @@
     animation-play-state: paused;
   }
 
-  /* Alternating Section Backgrounds - Minimalist Theme */
+  /* Alternating Section Backgrounds - Blue Theme */
   .section-pastel-blue {
-    background-color: transparent;
-    color: hsl(0, 0%, 10%);
+    background-color: hsl(200, 70%, 85%);
+    color: hsl(0, 0%, 100%);
     position: relative;
     overflow: hidden;
   }
@@ -673,8 +673,8 @@
   }
 
   .section-hard-blue {
-    background: transparent;
-    color: hsl(0, 0%, 10%);
+    background: hsl(200, 70%, 85%);
+    color: hsl(0, 0%, 100%);
     position: relative;
     overflow: hidden;
   }
