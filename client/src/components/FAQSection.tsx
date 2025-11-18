@@ -47,7 +47,7 @@ const FAQSection = () => {
     {
       question: "WHERE SHOULD I PARK?",
       icon: MapPin,
-      answer: "We have reserved parking in front of the Daza Park along the Road and also inside the Daza Park premises."
+      answer: "We have reserved parking in front of Daza Park along the Road and also inside the Daza Park premises."
     },
     {
       question: "WHERE WILL I BE SEATED AT THE RECEPTION?",
