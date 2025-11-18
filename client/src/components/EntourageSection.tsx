@@ -3,44 +3,44 @@ import { motion } from 'framer-motion';
 
 const EntourageSection = () => {
   const parentsOfGroom = [
-    { name: "Alma G. Anonuevo" },
-    { name: "MSG Alexander R Anonuevo PA (RET)" }
+    { name: "Mrs. Alma G. Anonuevo" },
+    { name: "MSG Alexander R Anonuevo PA(RET)" }
   ];
 
   const parentsOfBride = [
-    { name: "Anna Marie A. Glarian" },
-    { name: "2LT Rodolfo C Glarian PA (RET)" }
+    { name: "Mrs. Anna Marie A. Glarian" },
+    { name: "2LT Rodolfo C Glarian PA(RET)" }
   ];
 
   const ninong = [
-    { name: "VADM Ferdinand S Golez AFP (RET)" },
-    { name: "VADM Toribio D Adaci Jr AFP (RET)" },
-    { name: "RADM Allan M Javier PN" },
-    { name: "COMMO Dwight Steven M. Dulnoan PN" },
-    { name: "COMMO Danilo S Aguit PN (RET)" },
-    { name: "COMMO Alex V Gianan PN" },
-    { name: "CAPT Dario A Yanto Jr PN (MNSA)" },
-    { name: "CAPT Ferdinand P Gloria PN (GSC)" },
-    { name: "COL Jimmy B Lucquiao PA (GSC)" },
-    { name: "LTCOL Alln G Reyes PAF (GSC)" }
+    { name: "VADM FERDINAND S GOLEZ AFP(RET)" },
+    { name: "VADM TORIBIO D ADACI JR AFP(RET)" },
+    { name: "RADM ALLAN M JAVIER PN" },
+    { name: "COMMO DWIGHT STEVEN M DULNOAN PN" },
+    { name: "COMMO DANILO S AGUIT PN(RET)" },
+    { name: "COMMO ALEX V GIANAN PN" },
+    { name: "CAPT DARIO A YANTO JR PN(MNSA)" },
+    { name: "CAPT FERDINAND P GLORIA PN(GSC)" },
+    { name: "COL JIMMY B LUCQUIAO PA(GSC)" },
+    { name: "LTC ALLAN G REYES PAF(GSC)" }
   ];
 
   const ninang = [
     { name: "Mrs. Annie G. Rosales" },
-    { name: "Ms Cecilia A Imperial" },
+    { name: "Mrs. Cecilia A. Imperial" },
     { name: "Mrs. Lucena Z. Grajo" },
-    { name: "Mrs. Mary Jane DS Dulnoan" },
+    { name: "Mrs. Mary Jane DS. Dulnoan" },
     { name: "Mrs. Rosalinda A. Abucejo" },
-    { name: "Miss Charmaine V Calungsod" },
-    { name: "Mrs. Marlyn Pabalinas" },
-    { name: "Mrs. Celia Strong" },
+    { name: "Miss Charmaine V. Calungsod Civ HR" },
+    { name: "Mrs. Marlyn N. Pabalinas Civ HR" },
+    { name: "Ms. Celia Strong" },
     { name: "Mrs. Lani Rose A. Manipon" },
-    { name: "Mrs. Carmelie Daisy Arcillas" }
+    { name: "Ms. Carmelie Daisy Arcillas" }
   ];
 
   const secondarySponsors = {
     candle: [
-      { name: "Ms. Marcela S Espiritu Civ HR" },
+      { name: "Mrs. Marcela S. Espiritu Civ HR" },
       { name: "MSG Roque B Awing PA" }
     ],
     veil: [
@@ -49,7 +49,7 @@ const EntourageSection = () => {
     ],
     cord: [
       { name: "ASN Jhomar Rhay H Niones PN" },
-      { name: "Mrs Devine Niones" }
+      { name: "Mrs. Devine Niones" }
     ]
   };
 
@@ -58,7 +58,7 @@ const EntourageSection = () => {
 
   const ringBearer = { name: "ASN Crisanto D Padul Jr PN" };
   const coinBearer = { name: "ASN Diodyl P Revadulla PN" };
-  const bibleBearer = { name: "Rolf Edmari E. Glarian" };
+  const bibleBearer = { name: "Mr. Rolf Edmari E. Glarian" };
   const flowerGirl = { name: "ASN Irma C. Salva PN" };
   const hereComesTheBrideBearer = { name: "ASN Jean C De Guzman PN" };
 
@@ -96,7 +96,7 @@ const EntourageSection = () => {
           <div data-testid="section-parents-groom">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Parents of the Groom</h3>
             {parentsOfGroom.map((parent, idx) => (
-              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-parent-groom-${idx}`}>
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-parent-groom-${idx}`}>
                 {parent.name}
               </p>
             ))}
@@ -104,7 +104,7 @@ const EntourageSection = () => {
           <div data-testid="section-parents-bride">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Parents of the Bride</h3>
             {parentsOfBride.map((parent, idx) => (
-              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-parent-bride-${idx}`}>
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-parent-bride-${idx}`}>
                 {parent.name}
               </p>
             ))}
@@ -133,7 +133,7 @@ const EntourageSection = () => {
             <div data-testid="section-ninang">
               <h4 className="text-xs md:text-sm tracking-widest uppercase text-gray-500 mb-3">Ninang</h4>
               {ninang.map((sponsor, idx) => (
-                <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-ninang-${idx}`}>
+                <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-ninang-${idx}`}>
                   {sponsor.name}
                 </p>
               ))}
@@ -150,11 +150,11 @@ const EntourageSection = () => {
         >
           <div data-testid="section-best-man">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Best Man</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-best-man">{bestMan.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-best-man">{bestMan.name}</p>
           </div>
           <div data-testid="section-maid-honor">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Maid of Honor</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-maid-honor">{maidOfHonor.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-maid-honor">{maidOfHonor.name}</p>
           </div>
         </motion.div>
 
@@ -168,7 +168,7 @@ const EntourageSection = () => {
           <div data-testid="section-candle">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Candle</h3>
             {secondarySponsors.candle.map((person, idx) => (
-              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-candle-${idx}`}>
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-candle-${idx}`}>
                 {person.name}
               </p>
             ))}
@@ -176,7 +176,7 @@ const EntourageSection = () => {
           <div data-testid="section-cord">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Cord</h3>
             {secondarySponsors.cord.map((person, idx) => (
-              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-cord-${idx}`}>
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-cord-${idx}`}>
                 {person.name}
               </p>
             ))}
@@ -184,7 +184,7 @@ const EntourageSection = () => {
           <div data-testid="section-veil">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Veil</h3>
             {secondarySponsors.veil.map((person, idx) => (
-              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 uppercase tracking-wide" data-testid={`text-veil-${idx}`}>
+              <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-veil-${idx}`}>
                 {person.name}
               </p>
             ))}
@@ -200,15 +200,15 @@ const EntourageSection = () => {
         >
           <div data-testid="section-bible-bearer">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Bible Bearer</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-bible-bearer">{bibleBearer.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-bible-bearer">{bibleBearer.name}</p>
           </div>
           <div data-testid="section-coin-bearer">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Coin Bearer</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-coin-bearer">{coinBearer.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-coin-bearer">{coinBearer.name}</p>
           </div>
           <div data-testid="section-ring-bearer">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Ring Bearer</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-ring-bearer">{ringBearer.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-ring-bearer">{ringBearer.name}</p>
           </div>
         </motion.div>
 
@@ -221,11 +221,11 @@ const EntourageSection = () => {
         >
           <div data-testid="section-flower-girl">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Flower Girl</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-flower-girl">{flowerGirl.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-flower-girl">{flowerGirl.name}</p>
           </div>
           <div data-testid="section-here-comes-bride-bearer">
             <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-3">Here Comes The Bride Bearer</h3>
-            <p className="text-xs md:text-sm text-gray-600 uppercase tracking-wide" data-testid="text-here-comes-bride-bearer">{hereComesTheBrideBearer.name}</p>
+            <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid="text-here-comes-bride-bearer">{hereComesTheBrideBearer.name}</p>
           </div>
         </motion.div>
 
