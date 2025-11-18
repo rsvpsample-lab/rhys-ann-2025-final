@@ -41,8 +41,7 @@ const EntourageSection = () => {
   const secondarySponsors = {
     candle: [
       { name: "Mrs. Marcela S. Espiritu Civ HR" },
-      { name: "MSg Roque B Awing PA" },
-      { name: "Mrs. Ma. Divina Niones" }
+      { name: "MSg Roque B Awing PA" }
     ],
     veil: [
       { name: "ASN Mhon N Pagatpatan PN" },
