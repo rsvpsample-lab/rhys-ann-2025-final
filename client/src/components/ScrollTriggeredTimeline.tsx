@@ -6,7 +6,8 @@ interface TimelineEvent {
     time: string;
     event: string;
     description: string;
-    icon: React.ComponentType<any>;
+    icon?: React.ComponentType<any>;
+    iconUrl?: string;
     hueA: number;
     hueB: number;
 }
@@ -18,6 +19,7 @@ interface TimelineCardProps {
 
 const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
     const IconComponent = timelineEvent.icon;
+    const iconUrl = timelineEvent.iconUrl;
     const isEven = i % 2 === 0;
 
     return (
@@ -66,7 +68,11 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             variants={cardVariants}
                         >
                             <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-yellow-600/30 flex items-center justify-center">
-                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
+                                {iconUrl ? (
+                                    <img src={iconUrl} alt={timelineEvent.event} className="w-10 h-10 md:w-12 md:h-12 object-contain" />
+                                ) : IconComponent ? (
+                                    <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
+                                ) : null}
                             </div>
                         </motion.div>
                     </>
@@ -77,7 +83,11 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             variants={cardVariants}
                         >
                             <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-yellow-600/30 flex items-center justify-center ml-auto">
-                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
+                                {iconUrl ? (
+                                    <img src={iconUrl} alt={timelineEvent.event} className="w-10 h-10 md:w-12 md:h-12 object-contain" />
+                                ) : IconComponent ? (
+                                    <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
+                                ) : null}
                             </div>
                         </motion.div>
                         <div className="w-[10%]"></div>
@@ -146,7 +156,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "2:00 PM",
         event: "Registration",
         description: "Guests arrive and register for the celebration.",
-        icon: BookOpen,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763444323/a2ec87a4-a1b8-4a1b-9f01-1df09fe0be52-removebg-preview_fegd8j.png",
         hueA: 40,
         hueB: 40,
     },
@@ -154,7 +164,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "2:30 PM",
         event: "Entourage Formation",
         description: "Our entourage prepares for the ceremony procession.",
-        icon: UserSquare,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763444322/43cc5e31-35d5-435d-9a7d-a5a748bc9834-removebg-preview_xn91q3.png",
         hueA: 40,
         hueB: 40,
     },
@@ -162,7 +172,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "3:00 PM",
         event: "Wedding Ceremony",
         description: "Witness our vows and the beginning of our journey together.",
-        icon: Heart,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443482/c97090f6-ba37-470b-87de-85444b456fe2-removebg-preview_dlhacn.png",
         hueA: 40,
         hueB: 40,
     },
@@ -170,7 +180,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "4:00 PM",
         event: "Photo Session / Cocktail Hour",
         description: "Capture precious moments while enjoying cocktails.",
-        icon: Camera,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763444322/abc2a985-f83a-4f83-8699-0c697d56cd27-removebg-preview_kvlrtb.png",
         hueA: 40,
         hueB: 40,
     },
@@ -178,7 +188,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "4:30 PM",
         event: "Reception Starts",
         description: "Join us as we begin the evening celebration.",
-        icon: Users,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763444383/2fbf6eb7-491e-4491-a25d-ea25a1d922f6__1_-removebg-preview_sip21s.png",
         hueA: 40,
         hueB: 40,
     },
@@ -186,7 +196,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "6:00 PM",
         event: "Dinner Reception",
         description: "Share a delicious meal with us and our loved ones.",
-        icon: Utensils,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763444322/e2a40e37-eead-4eea-94dd-3d4d9af26dfe-removebg-preview_feavro.png",
         hueA: 40,
         hueB: 40,
     },
@@ -194,7 +204,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "8:30 PM",
         event: "Time to Dance and Wave",
         description: "Let's dance the night away and celebrate!",
-        icon: Disc3,
+        iconUrl: "https://res.cloudinary.com/dajcu5yvb/image/upload/v1763444322/9b91f644-b094-4b09-89e5-089e9ced77fd-removebg-preview_sxdfm0.png",
         hueA: 40,
         hueB: 40,
     },
