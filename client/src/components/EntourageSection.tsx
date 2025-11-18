@@ -27,7 +27,7 @@ const EntourageSection = () => {
 
   const ninang = [
     { name: "Mrs. Annie G. Rosales" },
-    { name: "Mrs. Cecilia A. Imperial Civ Hr" },
+    { name: "Mrs. Cecilia A. Imperial Civ HR" },
     { name: "Mrs. Lucena Z. Grajo" },
     { name: "Mrs. Mary Jane DS. Dulnoan" },
     { name: "Mrs. Rosalinda A. Abucejo" },
