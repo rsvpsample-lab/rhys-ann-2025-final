@@ -47,7 +47,11 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 className="flex justify-center"
               >
                 <div className="bg-primary p-5 rounded-full shadow-lg">
-                  <Music className="h-10 w-10 text-primary-foreground" />
+                  <img 
+                    src="https://res.cloudinary.com/dna2lcbua/image/upload/v1763441125/972c77f1-2a7c-4b0a-b5c6-c0609993e4af_kdejrj.png"
+                    alt="Music"
+                    className="h-10 w-10 object-contain"
+                  />
                 </div>
               </motion.div>
               

@@ -4,7 +4,7 @@ const SaveTheDateVideoSection = () => {
   return (
     <motion.section 
       id="save-the-date-video" 
-      className="section-hard-blue bg-white relative overflow-hidden py-24"
+      className="section-hard-blue bg-background relative overflow-hidden py-24"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
