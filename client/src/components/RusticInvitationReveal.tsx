@@ -75,7 +75,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
                   <img 
                     src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763442716/751525ab-5907-4590-885a-c08578c62b36-removebg-preview_itqfp2.png" 
                     alt="Wedding symbol" 
-                    className="w-8 h-8 object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
