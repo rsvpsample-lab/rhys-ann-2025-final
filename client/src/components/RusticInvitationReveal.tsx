@@ -47,13 +47,13 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             data-testid="decoration-flower-invitation-topleft"
           />
           <img 
-            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443058/259dd688-c7cf-4c7c-a6f8-ee6f89291827_c3q7h0.png" 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443057/259dd688-c7cf-4c7c-a6f8-ee6f89291827-removebg-preview_u1kkce.png" 
             alt="" 
             className="absolute top-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none"
             data-testid="decoration-flower-invitation-topright"
           />
           <img 
-            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443058/259dd688-c7cf-4c7c-a6f8-ee6f89291827_c3q7h0.png" 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443057/259dd688-c7cf-4c7c-a6f8-ee6f89291827-removebg-preview_u1kkce.png" 
             alt="" 
             className="absolute bottom-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none transform rotate-45"
             data-testid="decoration-flower-invitation-bottomleft"
