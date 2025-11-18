@@ -19,7 +19,14 @@ const StorySection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 3.8 }}
       >
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-center text-foreground mb-3" data-testid="text-story-title">SHE SAID YES!💍</h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display text-center text-foreground mb-3 flex items-center justify-center gap-2" data-testid="text-story-title">
+          SHE SAID YES!
+          <img 
+            src="https://res.cloudinary.com/dajcu5yvb/image/upload/v1763443482/c97090f6-ba37-470b-87de-85444b456fe2-removebg-preview_dlhacn.png" 
+            alt="Wedding rings" 
+            className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 inline-block object-contain"
+          />
+        </h2>
         <p className="text-center text-sm sm:text-base text-foreground/60 italic">A journey of love and commitment</p>
       </motion.div>
       <div className="max-w-6xl mx-auto">
