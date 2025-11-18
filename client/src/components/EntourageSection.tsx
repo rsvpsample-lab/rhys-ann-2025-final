@@ -122,23 +122,32 @@ const EntourageSection = () => {
           <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-600 mb-6">
             Principal Sponsors
           </h3>
-          <div className="grid grid-cols-2 gap-x-8 md:gap-x-16 gap-y-1 max-w-3xl mx-auto">
-            <div data-testid="section-ninong">
-              <h4 className="text-xs md:text-sm tracking-widest uppercase text-gray-500 mb-3">Ninong</h4>
-              {ninong.map((sponsor, idx) => (
-                <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-ninong-${idx}`}>
-                  {sponsor.name}
-                </p>
-              ))}
-            </div>
-            <div data-testid="section-ninang">
-              <h4 className="text-xs md:text-sm tracking-widest uppercase text-gray-500 mb-3">Ninang</h4>
-              {ninang.map((sponsor, idx) => (
-                <p key={idx} className="text-xs md:text-sm text-gray-600 mb-1 tracking-wide" data-testid={`text-ninang-${idx}`}>
-                  {sponsor.name}
-                </p>
-              ))}
-            </div>
+          <div className="max-w-2xl mx-auto space-y-3">
+            {ninong.map((sponsor, idx) => (
+              <div key={idx} className="grid grid-cols-2 gap-4 md:gap-8" data-testid={`sponsor-pair-${idx}`}>
+                <div className="text-right" data-testid="section-ninong">
+                  <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid={`text-ninong-${idx}`}>
+                    {sponsor.name}
+                  </p>
+                </div>
+                <div className="text-left" data-testid="section-ninang">
+                  <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid={`text-ninang-${idx}`}>
+                    {ninang[idx]?.name || ''}
+                  </p>
+                </div>
+              </div>
+            ))}
+            {/* Handle extra ninang if any */}
+            {ninang.length > ninong.length && ninang.slice(ninong.length).map((sponsor, idx) => (
+              <div key={`extra-${idx}`} className="grid grid-cols-2 gap-4 md:gap-8">
+                <div className="text-right"></div>
+                <div className="text-left" data-testid="section-ninang">
+                  <p className="text-xs md:text-sm text-gray-600 tracking-wide" data-testid={`text-ninang-${ninong.length + idx}`}>
+                    {sponsor.name}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </motion.div>
 
