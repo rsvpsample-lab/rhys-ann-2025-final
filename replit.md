@@ -1,7 +1,7 @@
 # Wedding Invitation Website
 
 ## Overview
-This project is a full-stack JavaScript application for a wedding invitation website for Kenneth I. Napa and Suzette A. Contreras, celebrating their wedding on December 28, 2025. It features a responsive, interactive, and modern design with multiple sections including hero, slideshow, invitation details, countdown, story, venue, RSVP, and more. The website aims to provide an elegant and engaging experience for wedding guests. Key capabilities include an interactive quiz game to reveal different invitation designs, background music with user interaction, and SEO optimization.
+This project is a full-stack JavaScript application for a wedding invitation website for Rhys & Ann, celebrating their wedding on December 10, 2025. It features a responsive, interactive, and modern design with multiple sections including hero, slideshow, invitation details, countdown, story, venue, RSVP, and more. The website aims to provide an elegant and engaging experience for wedding guests. Key capabilities include an interactive quiz game to reveal different invitation designs, background music with user interaction, and SEO optimization.
 
 ## User Preferences
 - Background music should play automatically when clicking "Open Invitation" with NO control buttons
@@ -22,12 +22,13 @@ The application is a full-stack JavaScript project using a React frontend with T
 - **Vite**: Frontend build tool.
 
 ## Recent Changes
-- **2025-11-15**: Complete content overhaul for Kenneth I. Napa & Suzette A. Contreras' wedding:
-  - Updated all components with new couple names "Kenneth I. Napa & Suzette A. Contreras"
-  - Changed wedding date to December 28, 2025 at 2:30 PM
-  - Updated venues to two separate locations in Taal, Batangas:
-    - Ceremony: Basilica De San Martin De Tours, Taal, Batangas
-    - Reception: The Stable Rancho Blanco Event Center, Taal, Batangas
+- **2025-11-20**: Updated SEO meta tags to reflect correct wedding date of December 10, 2025
+  - Updated all meta tags in client/index.html (title, description, Open Graph, Twitter cards)
+  - Ensured consistency across all website components
+- **2025-11-15**: Complete content overhaul for Rhys & Ann's wedding:
+  - Updated all components with couple names "Rhys & Ann"
+  - Wedding date: December 10, 2025 at 3:00 PM
+  - Location: Quezon City
   - Updated dress code section with detailed attire guidelines:
     - Principal Sponsors: Formal attire
       - Men: Coat / Barong / Long sleeves
